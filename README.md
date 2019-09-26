@@ -1,2 +1,1 @@
-# mipt
-Tasks
+# For homework tasks
