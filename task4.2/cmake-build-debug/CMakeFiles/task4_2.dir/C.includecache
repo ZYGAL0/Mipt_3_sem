@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zygalo/C/Mipt_3_sem/task4.2/main.c
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+time.h
+-
+wait.h
+-
+
