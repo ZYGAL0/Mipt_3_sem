@@ -20,13 +20,8 @@ int main(int argc, char *argv[], char *envp[]) {
     }
     int child_stat = 0;
     char url[100];
-    int j = 0;
     while (fgets(url, 100, file) != NULL) {
-        j = 0;
-        while (url[j] != '\n') {
-            j++;
-        }
-        url[j] = '\0';
+        url[strlen(url) - 1] = '\0';
         size = write(fd[1], &url, strlen(url) + 1);
         if (size != (strlen(url) + 1)) {
             printf("Can't write into pipe\n");
@@ -49,7 +44,8 @@ int main(int argc, char *argv[], char *envp[]) {
             close(fd[0]);
             (void) execle ("/usr/bin/wget", "wget", mes, NULL, envp);
             printf ("Error in execle\n");
-            exit(-1);
+//            printf("%s\n", mes);
+            exit(0);
         }
         waitpid(res, &child_stat, 0);
     }
