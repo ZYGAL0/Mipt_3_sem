@@ -4,9 +4,11 @@
 #include <wait.h>
 #include <string.h>
 
-int main() {
+// 
+
+int main(int argc, char *argv[], char *envp[]) {
     size_t size = 0;
-    FILE *file = fopen("lol", "r");
+    FILE *file = fopen("input", "r");
     if (file == NULL) {
         printf("Can't open file\n");
         exit(-1);
@@ -19,40 +21,35 @@ int main() {
     int child_stat = 0;
     char url[100];
     int j = 0;
-    while (fscanf(file,"%s", url) != EOF) {
+    while (fgets(url, 100, file) != NULL) {
         j = 0;
         while (url[j] != '\n') {
             j++;
         }
         url[j] = '\0';
-        printf("Check: %s\n", url);
-        size = write(fd[1], &url, strlen(url));
-        if (size != strlen(url)) {
+        size = write(fd[1], &url, strlen(url) + 1);
+        if (size != (strlen(url) + 1)) {
             printf("Can't write into pipe\n");
             exit(-1);
         }
-        printf("Loh %d\n", getpid());
         int res = fork();
         if (res == -1) {
             printf("Can't fork child\n");
             exit(-1);
         } else if (res == 0) {
-            printf("%d\n", getpid());
+            fclose(file);
             close(fd[1]);
-            char mes[100];
-            size = read(fd[0], &mes, 100);
-            if (size == 0) {
+            printf("Child process%d\n", getpid());
+            char mes[101];
+            size = read(fd[0], &mes, 101);
+            if (size <= 0) {
                 printf("Can't read from pipe\n");
                 exit(-1);
             }
-//            execle ("/usr/bin/wget", "wget", mes, NULL, envp);
-            printf("%s\n", mes);
-            sleep(5);
             close(fd[0]);
-            return 0;
-        } else {
-//            execle ("/usr/bin/wget", "wget", url, NULL, envp);
-            waitpid(res, &child_stat, 0);
+            (void) execle ("/usr/bin/wget", "wget", mes, NULL, envp);
+            printf ("Error in execle\n");
+            exit(-1);
         }
         waitpid(res, &child_stat, 0);
     }
