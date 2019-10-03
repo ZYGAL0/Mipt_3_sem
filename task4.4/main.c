@@ -4,7 +4,7 @@
 #include <wait.h>
 #include <string.h>
 
-// 
+// Основной процесс считывает из input url-ссылки, а дочерние процессы скачивают  html с помощью exec
 
 int main(int argc, char *argv[], char *envp[]) {
     size_t size = 0;
