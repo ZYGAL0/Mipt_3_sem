@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/queue.dir/server.c.o CMakeFiles/queue.dir/client.c.o  -o queue 

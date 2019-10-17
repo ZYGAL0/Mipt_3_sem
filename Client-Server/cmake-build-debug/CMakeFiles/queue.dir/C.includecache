@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zygalo/C/queue/consumer.c
+sys/types.h
+-
+sys/ipc.h
+-
+sys/msg.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/home/zygalo/C/queue/main.c
+sys/types.h
+-
+sys/ipc.h
+-
+sys/msg.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+
