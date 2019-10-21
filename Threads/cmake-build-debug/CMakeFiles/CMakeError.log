@@ -1,0 +1,63 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1f49/fast && /usr/bin/make -f CMakeFiles/cmTC_f1f49.dir/build.make CMakeFiles/cmTC_f1f49.dir/build
+make[1]: Entering directory '/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1f49.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f1f49.dir/src.c.o   -c "/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_f1f49
+/snap/clion/88/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f49.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_f1f49.dir/src.c.o  -o cmTC_f1f49 
+CMakeFiles/cmTC_f1f49.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x5b): undefined reference to `pthread_join'
+src.c:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f1f49.dir/build.make:86: recipe for target 'cmTC_f1f49' failed
+make[1]: *** [cmTC_f1f49] Error 1
+make[1]: Leaving directory '/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f1f49/fast' failed
+make: *** [cmTC_f1f49/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2612f/fast && /usr/bin/make -f CMakeFiles/cmTC_2612f.dir/build.make CMakeFiles/cmTC_2612f.dir/build
+make[1]: Entering directory '/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2612f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2612f.dir/CheckFunctionExists.c.o   -c /snap/clion/88/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2612f
+/snap/clion/88/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2612f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2612f.dir/CheckFunctionExists.c.o  -o cmTC_2612f -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2612f.dir/build.make:86: recipe for target 'cmTC_2612f' failed
+make[1]: *** [cmTC_2612f] Error 1
+make[1]: Leaving directory '/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_2612f/fast' failed
+make: *** [cmTC_2612f/fast] Error 2
+
+
+

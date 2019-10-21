@@ -1,0 +1,3 @@
+/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/thread_s.dir
+/home/zygalo/C/thread's/cmake-build-debug/CMakeFiles/edit_cache.dir
