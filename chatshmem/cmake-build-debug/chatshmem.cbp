@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="chatshmem">
-				<Option output="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/chatshmem" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug"/>
+				<Option output="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/chatshmem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 chatshmem"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 chatshmem"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="chatshmem/fast">
-				<Option output="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/chatshmem" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug"/>
+				<Option output="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/chatshmem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,27 +61,27 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 chatshmem/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 chatshmem/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Thirdsem/own/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C/Mipt_3_sem/chatshmem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zygalo/C/Thirdsem/own/chatshmem/main.c">
+		<Unit filename="/home/zygalo/C/Mipt_3_sem/chatshmem/main.c">
 			<Option target="chatshmem"/>
 		</Unit>
-		<Unit filename="/home/zygalo/C/Thirdsem/own/chatshmem/CMakeLists.txt">
+		<Unit filename="/home/zygalo/C/Mipt_3_sem/chatshmem/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
