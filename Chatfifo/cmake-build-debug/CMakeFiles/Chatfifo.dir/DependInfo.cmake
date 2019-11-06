@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zygalo/Experiment/own/Chatfifo/main.c" "/home/zygalo/Experiment/own/Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/main.c.o"
+  "/home/zygalo/C/Mipt_3_sem/Chatfifo/main.c" "/home/zygalo/C/Mipt_3_sem/Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

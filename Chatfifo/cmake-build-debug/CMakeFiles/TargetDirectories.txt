@@ -1,3 +1,3 @@
-/home/zygalo/Experiment/own/Chatfifo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/zygalo/Experiment/own/Chatfifo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/zygalo/Experiment/own/Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir
+/home/zygalo/C/Mipt_3_sem/Chatfifo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C/Mipt_3_sem/Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir
+/home/zygalo/C/Mipt_3_sem/Chatfifo/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Chatfifo.dir/main.c.o"
-  "Chatfifo.pdb"
   "Chatfifo"
+  "Chatfifo.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
