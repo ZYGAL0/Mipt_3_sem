@@ -1,4 +1,4 @@
-/snap/clion/88/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zygalo/C/Thirdsem/own/chatqueue
+/snap/clion/92/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zygalo/C/Mipt_3_sem/Chatqueue
 -- The C compiler identification is GNU 7.4.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -7,5 +7,17 @@
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Configuring done
--- Generating done
--- Build files have been written to: /home/zygalo/C/Thirdsem/own/chatqueue/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    main.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: chatqueue
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

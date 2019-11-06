@@ -1,3 +1,0 @@
-/home/zygalo/C/Thirdsem/own/chatqueue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/zygalo/C/Thirdsem/own/chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir
-/home/zygalo/C/Thirdsem/own/chatqueue/cmake-build-debug/CMakeFiles/edit_cache.dir
