@@ -12,87 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e88644a-7bc5-4397-8a50-6397b25b5fba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sem/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/3.12.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/3.12.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/3.12.1/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Chatfifo.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/Chatfifo.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/Chatfifo.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatfifo/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chatqueue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/chatqueue.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chatqueue/res.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Chatqueue/res.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/chatshmem.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/chatshmem.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/chatshmem.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/chatshmem.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/chatshmem.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/chatshmem.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/CMakeFiles/sem.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sem/cmake-build-debug/sem.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../sem/cmake-build-debug/sem.cbp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chatfifo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -159,7 +81,8 @@
       <workItem from="1549629674053" duration="41000" />
       <workItem from="1573050939714" duration="4635000" />
       <workItem from="1573061346811" duration="2438000" />
-      <workItem from="1573063999310" duration="1539000" />
+      <workItem from="1573063999310" duration="2333000" />
+      <workItem from="1573069084054" duration="344000" />
     </task>
     <servers />
   </component>

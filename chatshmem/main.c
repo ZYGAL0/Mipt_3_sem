@@ -10,45 +10,50 @@
 #include <sys/sem.h>
 
 
-// Предполагаем, что размер исходного файла < SIZE
+    // Предполагаем, что размер исходного файла < SIZE
 #define SIZE 512
 
 int main(int argc, char *argv[]) {
 
+    //  Объявление того, чтобы требуется открыть в дургом терминале ту же программу, но с 2-мя входными параметрами
     if (argc == 1) {
         printf("\e[;35mOpen second terminal and Enter two or more arguments for chatting.\e[m\n");
     }
 
-//  Указатель на разделяемую память
-    char *memoryw;
-    char *memoryr;
-    char *memory;
-//  IPC дескриптор для области разделяемой памяти
-    int shmid;
-//  Имя файла, использующееся для генерации ключа.
-//  Файл с таким именем должен существовать в текущей директории
+    //  Имя файла, использующееся для генерации ключа.
+    //  Файл с таким именем должен существовать в текущей директории
     char pathname1[] = "key";
-//  IPC ключ
+
+    //  IPC ключ
     key_t key1;
 
-//  Генерируем IPC ключ из имени файла  в текущей директории
-//  и номера экземпляра области разделяемой памяти 0
+    //  Генерируем IPC ключ из имени файла  в текущей директории
+    //  и номера экземпляра области разделяемой памяти 0
     if ((key1 = ftok(pathname1, 0)) < 0) {
         printf("Can't generate key\n");
         exit(-1);
     }
 
-//  Пытаемся найти разделяемую память по сгенерированному ключу
+    //  IPC дескриптор для области разделяемой памяти
+    int shmid;
+
+    //  Пытаемся найти разделяемую память по сгенерированному ключу
     if ((shmid = shmget(key1, SIZE, 0666 | IPC_CREAT)) < 0) {
         printf("Can't create shared memory\n");
         exit(-1);
     }
 
-//  Пытаемся отобразить разделяемую память в адресное пространство текущего процесса
+    //  Указатель на разделяемую память
+    char *memoryw;
+    char *memoryr;
+    char *memory;
+
+    //  Пытаемся отобразить разделяемую память в адресное пространство текущего процесса
     if ((memory = (char *) shmat(shmid, NULL, 0)) == (char *) (-1)) {
         printf("Can't attach shared memory\n");
         exit(-1);
     }
+
     int arr[4] = {0, 1, 2, 3};
 
     if (argc == 1) {
@@ -60,7 +65,7 @@ int main(int argc, char *argv[]) {
         arr[0] = 2, arr[1] = 3, arr[2] = 0, arr[3] = 1;
     }
 
-    // semaphores
+    //  Объявление семофоров
     int semid;
     char pathname2[] = "main.c";
     key_t key2;
@@ -71,12 +76,10 @@ int main(int argc, char *argv[]) {
     }
     struct sembuf mybuf;
 
-    char messageout[256];
 
-    char name[21];
 
     // Ввод имени не более 20 символов
-
+    char name[21];
     printf("\e[;35mEnter your Name for chatting\e[m\n");
     printf("\e[;35mThe name must be less than 20 characters long: \e[m");
 
@@ -89,7 +92,10 @@ int main(int argc, char *argv[]) {
         fgets(name, 21, stdin);
         name[strlen(name) - 1] = '\0';
     }
+
     int i = 0;
+    char messageout[256];
+
     pid_t chpid = fork();
 
     if (chpid == -1) {
@@ -97,7 +103,7 @@ int main(int argc, char *argv[]) {
         printf("\e[;31mCan't fork a child process\e[m\n");
         exit(-1);
     } else if (chpid > 0) {
-        // struct time for message
+        // Время
         struct tm *u1;
         time_t timer1;
         while (1) {
