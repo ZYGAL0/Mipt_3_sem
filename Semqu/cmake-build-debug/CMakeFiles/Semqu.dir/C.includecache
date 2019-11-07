@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zygalo/C/Mipt_3_sem/Semqu/main.c
+sys/types.h
+-
+sys/ipc.h
+-
+sys/msg.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
