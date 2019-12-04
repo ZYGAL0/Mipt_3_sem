@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/TCP.dir/server.c.o  -o TCP 

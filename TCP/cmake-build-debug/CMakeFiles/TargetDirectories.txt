@@ -1,0 +1,3 @@
+/home/zygalo/C/Mipt_3_sem/TCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C/Mipt_3_sem/TCP/cmake-build-debug/CMakeFiles/TCP.dir
+/home/zygalo/C/Mipt_3_sem/TCP/cmake-build-debug/CMakeFiles/edit_cache.dir
