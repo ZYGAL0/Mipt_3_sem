@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zygalo/C/Mipt_3_sem/UDP/server.c
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+
