@@ -7,6 +7,7 @@
 #include <pthread.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+#include <signal.h>
 
 pthread_mutex_t lock;
 
@@ -21,7 +22,10 @@ void *mythread(void *newsockfd);
 
 int CreateHistory();
 
+void my_handler(int nsig);
+
 int main() {
+    (void)signal(SIGINT, my_handler);
 
     if (pthread_mutex_init(&lock, NULL) != 0) {
         fprintf(stderr, "\n mutex init failed\n");
@@ -32,8 +36,6 @@ int main() {
     for (int j = 0; j < CLIENTS; ++j) {
         clients[j] = -1;
     }
-
-    printf("SID: %d\n", getpid());
 
     int sockfd;
     struct sockaddr_in cliaddr, servaddr;
@@ -92,6 +94,18 @@ int main() {
             }
         }
     }
+}
+
+void my_handler(int nsig){
+    for (int i = 0; i < CLIENTS; ++i) {
+        if (clients[i] != -1) {
+            if (write(clients[i], "Exit", 5) < 0) {
+                perror(NULL);
+                close(clients[i]);
+            }
+        }
+    }
+    kill(getpid(), SIGKILL);
 }
 
 void FillServAdress(struct sockaddr_in *servaddr) {

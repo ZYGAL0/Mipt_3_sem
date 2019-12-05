@@ -77,6 +77,12 @@ int main(int argc, char **argv) {
                 close(sockfd);
                 exit(1);
             }
+            if (strcmp(recvline, "Exit") == 0) {
+                printf ("Server is down\n");
+                kill(getppid(), SIGKILL);
+                close(sockfd);
+                exit(0);
+            }
             printf("%s\n", recvline);
         }
     }
