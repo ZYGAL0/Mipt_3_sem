@@ -63,26 +63,6 @@ int main() {
         exit(1);
     }
 
-//    while (1) {
-//        for (int i = 0; i < CLIENTS; ++i) {
-//            if (clients[i] == -1) {
-//        clilen = sizeof(cliaddr);
-//        clients[i] = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
-//        if (clients[i] < 0) {
-//            perror(NULL);
-//            close(sockfd);
-//            exit(1);
-//        }
-//        pthread_t thid;
-//        int result = pthread_create(&thid, (pthread_attr_t *) NULL, mythread, &clients[i]);
-//        if (result != 0) {
-//            printf("Error on thread create, return value = %d\n", result);
-//            exit(-1);
-//                }
-//                break;
-//            }
-//        }
-//    }
     while (1) {
         clilen = sizeof(cliaddr);
         int cur = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
