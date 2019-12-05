@@ -10,7 +10,7 @@
 
 pthread_mutex_t lock;
 
-#define CLIENTS 3
+#define CLIENTS 2
 #define LEN 10000
 
 int clients[CLIENTS];
@@ -19,7 +19,7 @@ void FillServAdress(struct sockaddr_in *servaddr);
 
 void *mythread(void *newsockfd);
 
-int CreateHistory ();
+int CreateHistory();
 
 int main() {
 
@@ -57,29 +57,58 @@ int main() {
         exit(res);
     }
 
-    if (listen(sockfd, 10) < 0) {
+    if (listen(sockfd, 5) < 0) {
         perror(NULL);
         close(sockfd);
         exit(1);
     }
 
+//    while (1) {
+//        for (int i = 0; i < CLIENTS; ++i) {
+//            if (clients[i] == -1) {
+//        clilen = sizeof(cliaddr);
+//        clients[i] = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
+//        if (clients[i] < 0) {
+//            perror(NULL);
+//            close(sockfd);
+//            exit(1);
+//        }
+//        pthread_t thid;
+//        int result = pthread_create(&thid, (pthread_attr_t *) NULL, mythread, &clients[i]);
+//        if (result != 0) {
+//            printf("Error on thread create, return value = %d\n", result);
+//            exit(-1);
+//                }
+//                break;
+//            }
+//        }
+//    }
     while (1) {
-        for (int i = 0; i < CLIENTS; ++i) {
-            if (clients[i] == -1) {
-                clilen = sizeof(cliaddr);
-                clients[i] = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
-                if (clients[i] < 0) {
-                    perror(NULL);
-                    close(sockfd);
-                    exit(1);
+        clilen = sizeof(cliaddr);
+        int cur = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
+        if (cur < 0) {
+            perror(NULL);
+            close(sockfd);
+            exit(1);
+        }
+        int i = CLIENTS;
+        while (i == CLIENTS) {
+            for (i = 0; i < CLIENTS; ++i) {
+                if (clients[i] == -1) {
+                    if (write(cur, "OK", 2) < 0) {
+                        perror(NULL);
+                        close(sockfd);
+                        exit(1);
+                    }
+                    clients[i] = cur;
+                    pthread_t thid;
+                    int result = pthread_create(&thid, (pthread_attr_t *) NULL, mythread, &clients[i]);
+                    if (result != 0) {
+                        printf("Error on thread create, return value = %d\n", result);
+                        exit(-1);
+                    }
+                    break;
                 }
-                pthread_t thid;
-                int result = pthread_create(&thid, (pthread_attr_t *) NULL, mythread, &clients[i]);
-                if (result != 0) {
-                    printf("Error on thread create, return value = %d\n", result);
-                    exit(-1);
-                }
-                break;
             }
         }
     }
@@ -92,7 +121,7 @@ void FillServAdress(struct sockaddr_in *servaddr) {
     (*servaddr).sin_addr.s_addr = htonl(INADDR_ANY);
 }
 
-int CreateHistory () {
+int CreateHistory() {
     int fd = open("history.txt", O_RDWR | O_CREAT, 0666);
     if (fd == -1) {
         printf("File open failed!\n");

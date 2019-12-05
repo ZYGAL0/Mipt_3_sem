@@ -39,8 +39,16 @@ int main(int argc, char **argv) {
         exit(1);
     }
 
-    pid_t chpid = fork();
+    if (read(sockfd, recvline, 999) < 0) {
+        perror("Can\'t read\n");
+        close(sockfd);
+        exit(1);
+    }
+    if (strcmp(recvline, "OK") == 0) {
+        printf("Connection established\n");
+    }
 
+    pid_t chpid = fork();
 
     if (chpid == -1) {
         printf("Can't fork a child process\n");
