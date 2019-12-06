@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zygalo/C/Mipt_3_sem/flood/server.c">
+		<Unit filename="/home/zygalo/C/Mipt_3_sem/flood/client.c">
 			<Option target="flood"/>
 		</Unit>
 		<Unit filename="/home/zygalo/C/Mipt_3_sem/flood/CMakeLists.txt">

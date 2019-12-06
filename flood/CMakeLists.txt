@@ -5,8 +5,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -g")
 set(CMAKE_C_STANDARD 11)
 
 set (SOURCE_FILES
-        server.c)
-#        client.c)
+#        server.c)
+        client.c)
 
 add_executable(flood ${SOURCE_FILES})
 
