@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/97/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/97/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,27 +57,27 @@ include CMakeFiles/flood.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/flood.dir/flags.make
 
-CMakeFiles/flood.dir/client.c.o: CMakeFiles/flood.dir/flags.make
-CMakeFiles/flood.dir/client.c.o: ../client.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zygalo/C/Mipt_3_sem/flood/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/flood.dir/client.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/flood.dir/client.c.o   -c /home/zygalo/C/Mipt_3_sem/flood/client.c
+CMakeFiles/flood.dir/server.c.o: CMakeFiles/flood.dir/flags.make
+CMakeFiles/flood.dir/server.c.o: ../server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zygalo/C/Mipt_3_sem/flood/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/flood.dir/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/flood.dir/server.c.o   -c /home/zygalo/C/Mipt_3_sem/flood/server.c
 
-CMakeFiles/flood.dir/client.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/flood.dir/client.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zygalo/C/Mipt_3_sem/flood/client.c > CMakeFiles/flood.dir/client.c.i
+CMakeFiles/flood.dir/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/flood.dir/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zygalo/C/Mipt_3_sem/flood/server.c > CMakeFiles/flood.dir/server.c.i
 
-CMakeFiles/flood.dir/client.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/flood.dir/client.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zygalo/C/Mipt_3_sem/flood/client.c -o CMakeFiles/flood.dir/client.c.s
+CMakeFiles/flood.dir/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/flood.dir/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zygalo/C/Mipt_3_sem/flood/server.c -o CMakeFiles/flood.dir/server.c.s
 
 # Object files for target flood
 flood_OBJECTS = \
-"CMakeFiles/flood.dir/client.c.o"
+"CMakeFiles/flood.dir/server.c.o"
 
 # External object files for target flood
 flood_EXTERNAL_OBJECTS =
 
-flood: CMakeFiles/flood.dir/client.c.o
+flood: CMakeFiles/flood.dir/server.c.o
 flood: CMakeFiles/flood.dir/build.make
 flood: CMakeFiles/flood.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zygalo/C/Mipt_3_sem/flood/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable flood"

@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/flood.dir/client.c.o  -o flood -lpthread 
+/usr/bin/cc -g   CMakeFiles/flood.dir/server.c.o  -o flood -lpthread 

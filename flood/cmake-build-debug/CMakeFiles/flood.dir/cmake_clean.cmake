@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/flood.dir/client.c.o"
+  "CMakeFiles/flood.dir/server.c.o"
   "flood"
   "flood.pdb"
 )

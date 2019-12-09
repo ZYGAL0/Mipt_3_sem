@@ -24,6 +24,8 @@ int CreateHistory();
 
 void my_handler(int nsig);
 
+int sockfd = 0;
+
 int main() {
     (void)signal(SIGINT, my_handler);
 
@@ -37,7 +39,6 @@ int main() {
         clients[j] = -1;
     }
 
-    int sockfd;
     struct sockaddr_in cliaddr, servaddr;
     socklen_t clilen;
 
@@ -70,16 +71,16 @@ int main() {
         int cur = accept(sockfd, (struct sockaddr *) &cliaddr, &clilen);
         if (cur < 0) {
             perror(NULL);
-            close(sockfd);
+            kill(getpid(), SIGINT);
             exit(1);
         }
         int i = CLIENTS;
         while (i == CLIENTS) {
             for (i = 0; i < CLIENTS; ++i) {
                 if (clients[i] == -1) {
-                    if (write(cur, "OK", 2) < 0) {
+                    if (write(cur, "OK\0", 3) < 0) {
                         perror(NULL);
-                        close(sockfd);
+                        kill(getpid(), SIGINT);
                         exit(1);
                     }
                     clients[i] = cur;
@@ -87,6 +88,7 @@ int main() {
                     int result = pthread_create(&thid, (pthread_attr_t *) NULL, mythread, &clients[i]);
                     if (result != 0) {
                         printf("Error on thread create, return value = %d\n", result);
+                        kill(getpid(), SIGINT);
                         exit(-1);
                     }
                     break;
@@ -99,26 +101,28 @@ int main() {
 void my_handler(int nsig){
     for (int i = 0; i < CLIENTS; ++i) {
         if (clients[i] != -1) {
-            if (write(clients[i], "Exit", 5) < 0) {
+            if (write(clients[i], "EXIT\0", 5) < 0) {
                 perror(NULL);
                 close(clients[i]);
             }
         }
     }
+    close(sockfd);
     kill(getpid(), SIGKILL);
 }
 
 void FillServAdress(struct sockaddr_in *servaddr) {
     bzero(servaddr, sizeof((*servaddr)));
-    (*servaddr).sin_family = AF_INET;
-    (*servaddr).sin_port = htons(51000);
-    (*servaddr).sin_addr.s_addr = htonl(INADDR_ANY);
+    servaddr->sin_family = AF_INET;
+    servaddr->sin_port = htons(51000);
+    servaddr->sin_addr.s_addr = htonl(INADDR_ANY);
 }
 
 int CreateHistory() {
     int fd = open("history.txt", O_RDWR | O_CREAT, 0666);
     if (fd == -1) {
         printf("File open failed!\n");
+        kill(getpid(), SIGINT);
         return 1;
 //        exit(1);
     }
@@ -130,11 +134,12 @@ int CreateHistory() {
 
 void *mythread(void *newsockfd) {
 
-    int sockfd = *(int *) newsockfd;
+    int sockcl = *(int *) newsockfd;
 
     int fd = open("history.txt", O_RDWR | O_CREAT, 0666);
     if (fd == -1) {
         printf("File open failed!\n");
+        kill(getpid(), SIGINT);
         exit(1);
     }
 
@@ -142,6 +147,7 @@ void *mythread(void *newsockfd) {
     close(fd);
     if (ptr == MAP_FAILED) {
         printf("Mapping failed!\n");
+        kill(getpid(), SIGINT);
         exit(2);
     }
 
@@ -149,16 +155,16 @@ void *mythread(void *newsockfd) {
     int n = 0;
     char line[1000];
     bzero(&line, 1000);
-    while ((n = read(sockfd, line, 999)) > 0) {
-        if (strcmp(line, "Exit") == 0) {
+    while ((n = read(sockcl, line, 999)) > 0) {
+        if (strcmp(line, "EXIT") == 0) {
             break;
         }
 
         for (int lol = 0; lol < CLIENTS; ++lol) {
-            if (clients[lol] != sockfd && clients[lol] != -1) {
+            if (clients[lol] != sockcl && clients[lol] != -1) {
                 if (write(clients[lol], line, n) < 0) {
                     perror(NULL);
-                    close(sockfd);
+                    kill(getpid(), SIGINT);
                     exit(1);
                 }
             }
@@ -172,15 +178,16 @@ void *mythread(void *newsockfd) {
 
     if (n < 0) {
         perror(NULL);
-        close(sockfd);
+        kill(getpid(), SIGINT);
         exit(1);
     }
+
     int end = 0;
-    while (clients[end] != sockfd && end < CLIENTS) {
+    while (clients[end] != sockcl && end < CLIENTS) {
         end++;
     }
     clients[end] = -1;
-    close(sockfd);
+    close(sockcl);
     printf("Someone left chat\n");
     munmap((void *) ptr, LEN * sizeof(char));
     return NULL;

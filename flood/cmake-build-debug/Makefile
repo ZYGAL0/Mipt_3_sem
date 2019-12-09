@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/97/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/97/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/zygalo/C/Mipt_3_sem/flood/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/97/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/98/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/97/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/98/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,32 +123,32 @@ flood/fast:
 	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/build
 .PHONY : flood/fast
 
-client.o: client.c.o
+server.o: server.c.o
 
-.PHONY : client.o
+.PHONY : server.o
 
 # target to build an object file
-client.c.o:
-	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/client.c.o
-.PHONY : client.c.o
+server.c.o:
+	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/server.c.o
+.PHONY : server.c.o
 
-client.i: client.c.i
+server.i: server.c.i
 
-.PHONY : client.i
+.PHONY : server.i
 
 # target to preprocess a source file
-client.c.i:
-	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/client.c.i
-.PHONY : client.c.i
+server.c.i:
+	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/server.c.i
+.PHONY : server.c.i
 
-client.s: client.c.s
+server.s: server.c.s
 
-.PHONY : client.s
+.PHONY : server.s
 
 # target to generate assembly for a file
-client.c.s:
-	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/client.c.s
-.PHONY : client.c.s
+server.c.s:
+	$(MAKE) -f CMakeFiles/flood.dir/build.make CMakeFiles/flood.dir/server.c.s
+.PHONY : server.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... flood"
 	@echo "... edit_cache"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 
